@@ -1,0 +1,28 @@
+#droppable{
+    float: right;
+    border: #000 1px solid;
+}
+
+#droppable #droppable1, #droppable2, #droppable3 { 
+   width:200px; 
+   height:80px; 
+   padding:10px; 
+   margin:10px;
+   border: #000 1px solid;
+}
+
+#draggable{
+    float: left;
+    border: #000 1px solid;
+    min-width: 100px;
+    min-height: 50px;
+}
+
+#draggable #draggable1, #draggable1, #draggable2, #draggable3 {
+  width:100px; 
+  height:30px; 
+  padding:5px; 
+  margin:5px;
+  border: #000 1px solid;
+  -moz-user-select:none;
+}

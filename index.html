@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://touchpunch.furf.com/content.php?/droppable/default-functionality -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <title>jQuery UI Touch Punch</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>body { background:#fff; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }</style>
+
+    <link rel="stylesheet" href="css.css">
+  
+    <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.min.js"></script>
+    <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery-ui.min.js"></script>
+    <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.ui.touch-punch.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+      
+        <script>
+        $(function() {
+          $( "#draggable1" ).draggable();
+        });
+        $(function() {
+          $( "#droppable1" ).droppable({
+            drop: function( event, ui ) {
+
+              if(ui.draggable.context.id == 'draggable1'){
+                    alert('Eeeeeee Poxavida, poxavida!');
+                    $( this )
+                    .addClass( "ui-state-highlight" )
+                 }
+             }
+          });
+        });
+        
+
+        $(function() {
+          $( "#draggable2" ).draggable();
+        });  
+        $(function() {
+          $( "#droppable2" ).droppable({
+            drop: function( event, ui ) {
+              
+              if(ui.draggable.context.id == 'draggable2'){
+                    alert('Eeeeeee Poxavida, poxavida!');
+                    $( this )
+                    .addClass( "ui-state-highlight" )
+              }
+            }
+          });
+        });  
+        
+
+        $(function() {
+          $( "#draggable3" ).draggable();
+        });
+        $(function() {
+          $( "#droppable3" ).droppable({
+            drop: function( event, ui ) {
+
+              if(ui.draggable.context.id == 'draggable3'){
+                    alert('Eeeeeee Poxavida, poxavida!');
+                    $( this )
+                    .addClass( "ui-state-highlight" )
+              }
+            }
+          });
+        });
+
+        </script>
+
+
+      <div class="demo">
+
+      <!-- Bloco que vai arrastar -->
+
+      <div id="draggable">
+        
+          <div id="draggable1" class="ui-widget-content ui-draggable" style="position: relative;">
+            Whole
+          </div>
+
+          <div id="draggable2" class="ui-widget-content ui-draggable" style="position: relative;">
+            Performed
+          </div>
+
+          <div id="draggable3" class="ui-widget-content ui-draggable" style="position: relative;">
+            Carried
+          </div>
+
+      </div>   
+
+      <!-- Bloco que recebe os drag -->
+
+      <div id="droppable">
+
+          <div id="droppable1" class="ui-widget-header ui-droppable">
+            Inteiro
+          </div>
+
+          <div id="droppable2" class="ui-widget-header ui-droppable">
+            Realizado
+          </div>
+
+          <div id="droppable3" class="ui-widget-header ui-droppable">
+            Transportado
+          </div>
+
+      </div>    
+
+      </div><!-- End demo -->
+
+    
+
+</body></html>
