@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)http://touchpunch.furf.com/content.php?/droppable/default-functionality -->
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <title>Joining the Words</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <style>body { background:#fff; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif; }</style>
+
+    <style>
+    *{
+      
+    }
+    .certo{
+      background-color: green;
+      z-index: -99px;
+    }
+
+    .errado{
+      background-color: red;
+    }
+    </style>
+
+    <link rel="stylesheet" href="css.css">
+  
+    <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.min.js"></script>
+    <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery-ui.min.js"></script>
+    <script src="./jQuery UI Touch Punch - Mobile Device Touch Event Support for jQuery UI_files/jquery.ui.touch-punch.min.js"></script>
+  </head>
+  <body>
+
+    <div class="container">
+    <center><h2>Relacione as palavras com as traduções</h2></center>
+    
+<!-- Adicionei um comentario no branch mrmp-card1 -->
+      
+        <script>
+
+        function acertar(drag, drop)
+        {
+          $(drag).hide();
+          $(drop).hide();
+        }
+
+/*************** DRAG 1 **************************/        
+        $(function() {
+          $( "#draggable1" ).draggable();
+        
+        });
+
+        $(function() {
+          $( "#droppable1" ).droppable({
+
+            drop: function( event, ui ) {
+
+              if(ui.draggable.context.id == 'draggable1'){
+
+                $( this ).removeClass( "errado" );
+                $( this ).addClass( "certo" );
+                $( this ).hide();
+                $( "#draggable1" ).hide();
+              }
+              else{
+                $( this ).removeClass( "certo" );
+                $( this ).addClass( "errado" );
+              }
+             }
+          });
+        });
+
+/*************** DRAG 1 **************************/
+
+
+/*************** DRAG 2 **************************/        
+        $(function() {
+          $( "#draggable2" ).draggable();
+        });  
+
+        $(function() {
+          $( "#droppable2" ).droppable({
+            drop: function( event, ui ) {
+              
+              if(ui.draggable.context.id == 'draggable2'){
+                $( this ).removeClass( "errado" );
+                $( this ).addClass( "certo" );
+                $( this ).hide();
+                $( "#draggable2" ).hide();
+              }
+              else{
+                $( this ).removeClass( "certo" );
+                $( this ).addClass( "errado" );
+              }
+            }
+          });
+        }); 
+
+/*************** DRAG 2 **************************/                
+
+
+/*************** DRAG 3 **************************/                
+        $(function() {
+          $( "#draggable3" ).draggable();
+        });
+
+        $(function() {
+          $( "#droppable3" ).droppable({
+            drop: function( event, ui ) {
+
+              if(ui.draggable.context.id == 'draggable3'){
+                $( this ).removeClass( "errado" );
+                $( this ).addClass( "certo" );
+                $( this ).hide();
+                $( "#draggable3" ).hide();
+              }
+              else{
+                $( this ).removeClass( "certo" );
+                $( this ).addClass( "errado" );
+              }
+
+            }
+          });
+        });
+
+/*************** DRAG 3 **************************/    
+
+
+/*************** DRAG 4 **************************/                
+        $(function() {
+          $( "#draggable4" ).draggable();
+        });
+
+        $(function() {
+          $( "#droppable4" ).droppable({
+            drop: function( event, ui ) {
+
+              if(ui.draggable.context.id == 'draggable4'){
+                $( this ).removeClass( "errado" );
+                $( this ).addClass( "certo" );
+                $( this ).hide();
+                $( "#draggable4" ).hide();                
+              }
+              else{
+                $( this ).removeClass( "certo" );
+                $( this ).addClass( "errado" );
+              }
+
+            }
+          });
+        });
+
+/*************** DRAG 4 **************************/    
+
+
+/*************** DRAG 5 **************************/                
+        $(function() {
+          $( "#draggable5" ).draggable();
+        });
+
+        $(function() {
+          $( "#droppable5" ).droppable({
+            drop: function( event, ui ) {
+
+              if(ui.draggable.context.id == 'draggable5'){
+                $( this ).removeClass( "errado" );
+                $( this ).addClass( "certo" );
+                $( this ).hide();
+                $( "#draggable5" ).hide();                
+              }
+              else{
+                $( this ).removeClass( "certo" );
+                $( this ).addClass( "errado" );
+              }
+
+            }
+          });
+        });
+
+/*************** DRAG 5 **************************/    
+
+
+/*************** DRAG 6 **************************/                
+        $(function() {
+          $( "#draggable6" ).draggable();
+        });
+
+        $(function() {
+          $( "#droppable6" ).droppable({
+            drop: function( event, ui ) {
+
+              if(ui.draggable.context.id == 'draggable6'){
+                $( this ).removeClass( "errado" );
+                $( this ).addClass( "certo" );
+                $( this ).hide();
+                $( "#draggable6" ).hide();                
+              }
+              else{
+                $( this ).removeClass( "certo" );
+                $( this ).addClass( "errado" );
+              }
+
+            }
+          });
+        });
+
+/*************** DRAG 6 **************************/  
+
+
+        </script>
+
+
+      <div class="demo">
+
+      <!-- Bloco que vai arrastar -->
+
+      <div id="draggable">
+        
+          <div id="draggable1" class="ui-widget-content ui-draggable" style="position: relative;">
+            Whole
+          </div>
+
+          <div id="draggable2" class="ui-widget-content ui-draggable" style="position: relative;">
+            Performed
+          </div>
+
+          <div id="draggable3" class="ui-widget-content ui-draggable" style="position: relative;">
+            Carried
+          </div>
+
+          <div id="draggable4" class="ui-widget-content ui-draggable" style="position: relative;">
+            throughout
+          </div>
+
+          <div id="draggable5" class="ui-widget-content ui-draggable" style="position: relative;">
+            through
+          </div>
+
+          <div id="draggable6" class="ui-widget-content ui-draggable" style="position: relative;">
+            gather
+          </div>
+
+      </div>   
+
+      <!-- Bloco que recebe os drag -->
+
+      <div id="droppable">
+
+          <div id="droppable1" class="ui-widget-header ui-droppable">
+            Inteiro
+          </div>
+
+          <div id="droppable5" class="ui-widget-header ui-droppable">
+            Através
+          </div>
+
+          <div id="droppable2" class="ui-widget-header ui-droppable">
+            Realizado
+          </div>
+
+          <div id="droppable3" class="ui-widget-header ui-droppable">
+            Transportado
+          </div>
+
+          <div id="droppable6" class="ui-widget-header ui-droppable">
+            Recolher
+          </div>          
+
+          <div id="droppable4" class="ui-widget-header ui-droppable">
+            Todo
+          </div>
+
+      </div>    
+
+      </div><!-- End demo -->   
+
+  </body>
+
+</html>
